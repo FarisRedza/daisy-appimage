@@ -1,5 +1,7 @@
 *tgz
 *.AppImage
 *.zsync
+*.deb
 AppDir
 appimage-build
+PKG_SOURCE

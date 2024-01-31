@@ -1,0 +1,8 @@
+Package: daisy-nhands-rules
+Version: 0.1
+Architecture: all
+Section: misc
+Essential: no
+Priority: optional
+Maintainer: Faris Redza <faris.redza1999@gmail.com>
+Description: udev rule that grants access to nhands USB devices.
