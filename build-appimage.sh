@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install dependencies
-sudo apt install libqtcore4 libqtgui4 libqt4-opengl
+sudo apt install -y libqtcore4 libqtgui4 libqt4-opengl
 
 # Extract daisy tarball
 DIR="$(basename *.tgz .tgz)"
