@@ -24,3 +24,9 @@ chmod +x appimage-builder-x86_64.AppImage
 # Create daisy appimage
 ./appimage-builder-x86_64.AppImage
 mv daisy-latest-x86_64.AppImage daisy.AppImage
+
+# Cleanup
+rm -rf AppDir
+rm -rf appimage-build
+rm -rf PKG_SOURCE
+rm -rf daisy-latest-x86_64.AppImage.zsync
