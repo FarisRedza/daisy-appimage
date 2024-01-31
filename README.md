@@ -1,6 +1,6 @@
 # daisy-appimage
 
-Script for packaging daisy into an [AppImage](https://github.com/AppImage), intended for use in an Ubuntu 18.04 LTS container, as this is the latest LTS that supports Qt4 libraries.\
+Script for packaging daisy into an [AppImage](https://github.com/AppImage), intended for use in an Ubuntu 18.04 LTS container, as this is the latest LTS that supports Qt4 libraries. Uses [appimage-builder](https://github.com/AppImageCrafters/appimage-builder/).
 
 The script downloads the required dependencies, extracts the daisy tarball, and uses the files to produce both the daisy AppImage and a deb file for the required udev rules.
 
