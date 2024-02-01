@@ -1,0 +1,13 @@
+[Desktop Entry]
+X-AppImage-Arch=x86_64
+X-AppImage-Version=latest
+X-AppImage-Name=daisy
+Name=daisy
+Exec=DAISY/daisy
+Icon=application-vnd.appimage
+Type=Application
+Terminal=false
+Categories=Utility;
+Comment=
+StartupWMClass=daisy
+StartupWMClass=Daisy
