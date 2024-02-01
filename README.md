@@ -1,10 +1,10 @@
 # daisy-appimage
 
-Script for packaging daisy into an [AppImage](https://github.com/AppImage), intended for use in an Ubuntu 18.04 LTS container, as this is the latest LTS that supports Qt4 libraries. Uses [appimage-builder](https://github.com/AppImageCrafters/appimage-builder/).
+Script for packaging Daisy (quTAG) into an [AppImage](https://github.com/AppImage), intended for use in an Ubuntu 18.04 LTS container, as this is the latest LTS that supports Qt4 libraries. Uses [appimage-builder](https://github.com/AppImageCrafters/appimage-builder/).
 
 The script downloads the required dependencies, extracts the daisy tarball, and uses the files to produce both the daisy AppImage and a deb file for the required udev rules.
 
-This repo does not provide daisy itself, just a script to convert a daisy tarball (.tgz archive file) into an AppImage.
+This repo does not provide Daisy itself, just a script to convert a Daisy tarball (.tgz archive file) into an AppImage.
 
 ## Usage
 Execute this script in an Ubuntu 18.04 LTS system, ideally a container\
