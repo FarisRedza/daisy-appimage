@@ -7,8 +7,8 @@ The script downloads the required dependencies, extracts the daisy tarball, and 
 This repo does not provide Daisy itself, just a script to convert a Daisy tarball (.tgz archive file) into an AppImage.
 
 ## Usage
-Execute this script in an Ubuntu 18.04 LTS system, ideally a container\
-First clone the repo, then download daisy and place the archive into the repo folder. Finally, run the script, which will produce the daisy.AppImage file and deb file containing the required udev rules.
+Execute this script in an Ubuntu 18.04 LTS system, ideally a container.\
+First clone the repo, then download daisy and place the archive into the repo folder. Finally, run the script, which will produce the daisy.AppImage file and a deb file containing the required udev rules.
 
 Install the deb file before running the AppImage to access nhands devices\
 `sudo apt install ./daisy-nhands-rules.deb`
