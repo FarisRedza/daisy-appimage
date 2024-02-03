@@ -1,7 +1,7 @@
 # appimage-builder recipe see https://appimage-builder.readthedocs.io for details
 version: 1
 AppDir:
-  path: ~/daisy-appimage/AppDir
+  path: $(pwd)/AppDir
   app_info:
     id: daisy
     name: daisy
