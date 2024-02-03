@@ -1,13 +1,7 @@
 #!/bin/bash
 
-# Extract daisy tarball
-DIR="$(basename *.tgz .tgz)"
-mkdir -p AppDir/
-tar -xzvf *.tgz
-mv $DIR DAISY
-mv DAISY AppDir/
-
 # Create udev rule deb package
+rm -rf PKG_SOURCE | true
 mkdir -p PKG_SOURCE/DEBIAN/
 cp debian/control PKG_SOURCE/DEBIAN/
 mkdir -p PKG_SOURCE/etc/udev/rules.d/

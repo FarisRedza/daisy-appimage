@@ -1,7 +1,15 @@
 # appimage-builder recipe see https://appimage-builder.readthedocs.io for details
 version: 1
+script:
+  - rm -rf AppDir  | true
+  - DIR="$(basename *.tgz .tgz)"
+  - mkdir -p AppDir
+  - tar -xzvf *.tgz
+  - mv $DIR DAISY
+  - mv DAISY AppDir
+
 AppDir:
-  path: $(pwd)/AppDir
+  path: .AppDir
   app_info:
     id: daisy
     name: daisy
@@ -20,48 +28,9 @@ AppDir:
       - libqtcore4
       - libqtgui4
       - libqt4-opengl
-    exclude:
-      - fontconfig
-      - fontconfig-config
-      - fonts-dejavu-core
-      - libavahi-client3
-      - libavahi-common-data
-      - libavahi-common3
-      - libcups2
-      - libfontconfig1
-      - libfreetype6
-      - libice6
-      - libjbig0
-      - libjpeg-turbo8
-      - libjpeg8
-      - liblcms2-2
-      - libmng2
-      - libmysqlclient20
-      - libqt4-dbus
-      - libqt4-declarative
-      - libqt4-network
-      - libqt4-script
-      - libqt4-sql
-      - libqt4-sql-mysql
-      - libqt4-xml
-      - libqt4-xmlpatterns
-      - libqtdbus4
-      - libsm6
-      - libtiff5
-      - libxi6
-      - libxrender1
-      - libxt6
-      - mysql-common
-      - qdbus
-      - qt-at-spi
-      - qtchooser
-      - qtcore4-l10n
-      - x11-common
+    exclude: []
   files:
-    include:
-    - /usr/lib/x86_64-linux-gnu/libQtCore.so.4*
-    - /usr/lib/x86_64-linux-gnu/libQtGui.so.4*
-    - /usr/lib/x86_64-linux-gnu/libQtOpenGL.so.4*
+    include: []
     exclude:
     - usr/share/man
     - usr/share/doc/*/README.*
