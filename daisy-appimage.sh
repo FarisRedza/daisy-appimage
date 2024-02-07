@@ -4,8 +4,8 @@
 rm -rf PKG_SOURCE | true
 mkdir -p PKG_SOURCE/DEBIAN/
 cp debian/control PKG_SOURCE/DEBIAN/
-mkdir -p PKG_SOURCE/etc/udev/rules.d/
-cp AppDir/DAISY/install/nhands.rules PKG_SOURCE/etc/udev/rules.d/
+mkdir -p PKG_SOURCE/usr/lib/udev/rules.d/
+cp AppDir/DAISY/install/nhands.rules PKG_SOURCE/usr/lib/udev/rules.d/
 dpkg-deb --root-owner-group --build PKG_SOURCE daisy-nhands-rules.deb
 
 # Download appimage-builder
